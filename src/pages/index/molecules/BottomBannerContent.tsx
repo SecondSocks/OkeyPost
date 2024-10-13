@@ -1,7 +1,15 @@
+import { useRef } from 'react'
 import { Button } from '../../components/green-button/Button'
 import styles from './BottomBannerContent.module.scss'
 
 export function BottomBannerContent() {
+    const inputText = useRef(null)
+
+    const setInputText = () => {
+        if (!inputText.current) return
+        inputText.current.value = ''
+    }
+
     return (
         <div className={styles.container}>
            <h3>
@@ -9,9 +17,9 @@ export function BottomBannerContent() {
            </h3>
            <div className={styles.form}>
                 <form>
-                    <input type='text' placeholder='Введите ваш E-Mail' />
+                    <input ref={inputText} type='text' placeholder='Введите ваш E-Mail'></input>
                 </form>
-                <Button text='Подписаться' width={240} height={66} />
+                <Button text='Подписаться' width={240} height={66} func={setInputText}/>
            </div>
         </div>
     )

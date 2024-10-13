@@ -4,8 +4,9 @@ interface Props {
     text: string
     width: number
     height: number
+    func?: () => void
 }
 
-export function Button({text, width, height}: Props) {
-    return <button className={styles.button} style={{width: width, height: height}}>{text}</button>
+export function Button({text, width, height, func}: Props) {
+    return <button className={styles.button} style={{width: width, height: height}} onClick={func}>{text}</button>
 }
