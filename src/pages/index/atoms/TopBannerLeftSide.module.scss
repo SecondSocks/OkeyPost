@@ -1,0 +1,22 @@
+.container {
+    width: 44.6rem;
+    > h1 {
+        color: rgb(255, 255, 255);
+        font-size: 72px;
+        font-weight: 800;
+        line-height: 80px;
+        letter-spacing: 0%;
+        text-align: left;
+        margin-bottom: 8px;
+    }
+
+    > p {
+        color: rgb(255, 255, 255);
+        font-size: 20px;
+        font-weight: 300;
+        line-height: 42px;
+        letter-spacing: 0%;
+        text-align: left;
+        margin-bottom: 36px;
+    }
+}

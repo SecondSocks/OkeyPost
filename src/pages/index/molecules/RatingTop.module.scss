@@ -1,0 +1,37 @@
+.container {
+    display: flex;
+    flex-direction: column;
+
+    > h2 {
+        width: 834px;
+        height: 112px;
+        color: rgb(31, 36, 40);
+        font-size: 44px;
+        font-weight: 800;
+        line-height: 56px;
+        letter-spacing: 0%;
+        text-align: left;
+        padding: 0;
+        margin: 0;
+    }
+
+    > p {
+        width: 604px;
+        height: 72px;
+        color: rgb(31, 36, 40);
+        font-size: 20px;
+        font-weight: 300;
+        line-height: 36px;
+        letter-spacing: 0%;
+        text-align: left;
+        padding: 0;
+        margin: 0;
+        margin-top: 20px;
+    }
+
+    .cards {
+        display: flex;
+        gap: 30px;
+        margin-top: 40px;
+    }
+}

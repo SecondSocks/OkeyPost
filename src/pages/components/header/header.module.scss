@@ -1,0 +1,39 @@
+.head {
+    width: 80%;
+    height: 7.5rem;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+
+    .container {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .links {
+            display: flex;
+            justify-content: space-between;
+            width: 44rem;
+        }
+
+        .auth {
+            display: flex;
+            width: 17.8rem;
+            justify-content: space-between;
+
+            .login {
+                padding-top: 0.25rem;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                width: 5rem;
+                height: 2rem;
+                > img {
+                    width: 2rem;
+                    height: 2rem;
+                }
+            }
+        }
+    }
+}

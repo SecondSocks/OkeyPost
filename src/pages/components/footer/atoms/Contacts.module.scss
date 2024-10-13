@@ -1,0 +1,20 @@
+.container {
+    width: 190px;
+    height: 110px;
+    display: flex;
+    flex-direction: column;
+
+    .contacts {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 1.5rem;
+
+        > a {
+            > img {
+                width: 46px;
+                height: 46px;
+            }
+        }
+    }
+
+}

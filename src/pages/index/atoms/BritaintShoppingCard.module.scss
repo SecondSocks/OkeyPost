@@ -1,0 +1,40 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    width: 328px;
+
+    > img {
+        width: 280px;
+        height: 280px;
+        border: 2px dashed gray;
+
+    }
+
+    .textBlock {
+        width: inherit;
+
+        > h5 {
+            width: 152px;
+            height: 48px;
+            color: rgb(31, 36, 40);
+            font-size: 20px;
+            font-weight: 700;
+            line-height: 24px;
+            letter-spacing: 0%;
+            text-align: left;
+            text-transform: uppercase;
+        }
+
+        > p {
+            width: 328px;
+            height: 61px;
+            font-size: 16px;
+            font-weight: 300;
+            line-height: 30px;
+            letter-spacing: 0%;
+            text-align: left;
+        }
+    }
+}

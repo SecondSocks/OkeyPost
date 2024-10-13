@@ -1,0 +1,44 @@
+.anotherColor {
+    color: rgb(1, 205, 125);
+}
+
+.container {
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+
+    .countryPrice {
+        width: 400px;
+        height: 120px;
+
+        .containerPrice {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-right: 6rem;
+        }
+
+        .price {
+            display: flex;
+            flex-direction: column;
+            padding-left: 1.5rem;
+
+            > h5 {
+                font-size: 26px;
+                font-weight: bold;
+                line-height: 36px;
+                letter-spacing: 0%;
+                text-align: left;
+                margin: 0;
+                padding: 0;
+            }
+
+            > p {
+                width: 123px;
+                height: 24px;
+                margin: 0;
+                padding: 0;
+            }
+        }
+    }
+}

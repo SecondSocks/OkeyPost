@@ -1,0 +1,19 @@
+.container {
+    width: 1400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 158px auto;
+
+    > h2 {
+        width: 30rem;
+        height: 6.3rem;
+        color: rgb(31, 36, 40);
+        font-size: 44px;
+        font-weight: 800;
+        line-height: 50px;
+        letter-spacing: 0%;
+        text-align: left;
+        padding-bottom: 2.1rem;
+    }
+}
