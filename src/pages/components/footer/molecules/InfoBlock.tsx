@@ -1,8 +1,5 @@
-import { Company } from '../atoms/Company'
 import { Contacts } from '../atoms/Contacts'
-import { Special } from '../atoms/Special'
 import { TextBlock } from '../atoms/TextBlock'
-import { Useful } from '../atoms/Useful'
 import styles from './InfoBlock.module.scss'
 
 export function InfoBlock() {

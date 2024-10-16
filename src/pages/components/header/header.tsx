@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom"
 import { Button } from "../green-button/Button"
 import styles from "./header.module.scss"
 
@@ -8,53 +9,55 @@ type TLinks = {
 }
 
 export function Header() {
-    const links: TLinks = [
+    const links: TLinks[] = [
         {
             key: "1",
             text: 'Как покупать',
-            src: '#'
+            src: '/how-buy'
         },
         {
             key: "2",
             text: 'Распродажи',
-            src: '#'
+            src: '/sales'
         },
         {
             key: "3",
             text: 'Цены',
-            src: '#'
+            src: '/prices'
         },
         {
             key: "4",
             text: 'Помощь',
-            src: '#'
+            src: '/help'
         },
         {
             key: "5",
             text: 'Бонусы',
-            src: '#'
+            src: '/bonuses'
         },
         {
             key: "6",
             text: 'Блог',
-            src: '#'
+            src: '/blog'
         },
         {
             key: "7",
             text: 'Магазины',
-            src: '#'
+            src: '/shops'
         },
     ]
 
     return (
         <div className={styles.head}>
             <div className={styles.container}>
-                <img src="logo.png" alt="logo" />
+                <Link to='/'>
+                    <img src="logo.png" alt="logo" />
+                </Link>
                 <div className={styles.links}>
                     {links.map(item => (
-                        <a href={item.src} key={item.key}>
+                        <Link to={item.src} key={item.key}>
                             <p>{item.text}</p>
-                        </a>
+                        </Link>
                     ))}
                 </div>
                 <div className={styles.auth}>

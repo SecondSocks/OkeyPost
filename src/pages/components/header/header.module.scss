@@ -11,6 +11,13 @@
         justify-content: space-between;
         align-items: center;
 
+        > a {
+            &:focus,
+            &:hover {
+                border: none;
+            }
+        }
+
         .links {
             display: flex;
             justify-content: space-between;

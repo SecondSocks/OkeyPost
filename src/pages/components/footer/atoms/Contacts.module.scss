@@ -10,6 +10,11 @@
         padding-top: 1.5rem;
 
         > a {
+            &:focus,
+            &:hover {
+                border: none;
+            }
+
             > img {
                 width: 46px;
                 height: 46px;

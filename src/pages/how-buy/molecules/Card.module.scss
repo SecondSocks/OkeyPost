@@ -1,0 +1,10 @@
+.container {
+    width: inherit;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+
+    .card {
+        width: 1030px;
+    }
+}
