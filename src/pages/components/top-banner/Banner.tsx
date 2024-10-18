@@ -1,4 +1,4 @@
-import { Button } from '../green-button/Button'
+import { GreenButton } from '../green-button/Button'
 import { ITopBanner } from '../types'
 import styles from './Banner.module.scss'
 
@@ -13,7 +13,7 @@ export function TopBanner({data}: Props) {
                 <p>Главная / {data.pageName}</p>
                 <h1>{data.title}</h1>
                 {data.description ? <h2>{data.description}</h2> : null}
-                {data.button ? <Button text={'Получить адрес в UK'} width={260} height={66} /> : null}
+                {data.button ? <GreenButton text={'Получить адрес в UK'} width={260} height={66} /> : null}
             </div>
         </div>
     )

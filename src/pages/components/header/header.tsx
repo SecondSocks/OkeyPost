@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom"
-import { Button } from "../green-button/Button"
+import { GreenButton } from "../green-button/Button"
 import styles from "./header.module.scss"
 
 type TLinks = {
@@ -67,7 +67,7 @@ export function Header() {
                             <p>Вход</p>
                         </a>
                     </div>
-                    <Button text={"Связаться с нами"} width={170} height={48} />
+                    <GreenButton text={"Связаться с нами"} width={170} height={48} />
                 </div>
             </div>
         </div>

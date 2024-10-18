@@ -1,4 +1,4 @@
-import { Button } from '../../components/green-button/Button'
+import { GreenButton } from '../../components/green-button/Button'
 import { BritaintShoppingCard } from '../atoms/BritaintShoppingCard'
 import styles from './BritainShoppingContent.module.scss'
 
@@ -33,7 +33,7 @@ export function BritainShoppingContent() {
            <p>
             Не хотите разбираться самостоятельно, наши мастера шопинга с радостью купят все товары за вас.
            </p>
-           <Button text={"Быстрая покупка"} width={240} height={66} />
+           <GreenButton text={"Быстрая покупка"} width={240} height={66} />
         </div>
     )
 }

@@ -1,4 +1,4 @@
-import { Button } from "../../components/green-button/Button"
+import { GreenButton } from "../../components/green-button/Button"
 import styles from "./TopBannerLeftSide.module.scss"
 
 export function BannerLeftSide() {
@@ -8,7 +8,7 @@ export function BannerLeftSide() {
             <p>
                 Начните экономить до 80% на шопинге. Регистрируйтесь в OkeyPost, чтобы покупатьскидками в UK одежду, обувь, гаджеты известных брендов и безопасно отправлять вещи в Россию.
             </p>
-            <Button text={"Получить адрес в РФ"} width={260} height={66} />
+            <GreenButton text={"Получить адрес в РФ"} width={260} height={66} />
         </div>
     )
 }

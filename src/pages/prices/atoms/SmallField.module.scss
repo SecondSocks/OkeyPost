@@ -1,0 +1,28 @@
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 685px;
+    min-height: 80px;
+    background-color: rgba(219, 219, 219, 0.5);
+    border-radius: 1rem;
+    box-shadow: 0px 0px 70px 0px rgba(138, 138, 138, 0.1);
+    padding: 0 40px;
+
+    > h3 {
+        color: rgb(34, 34, 34);
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 16px;
+        letter-spacing: 0%;
+        text-align: left;
+    }
+
+    .price {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 160px;
+        border-left: 1px solid gray;
+    }
+}

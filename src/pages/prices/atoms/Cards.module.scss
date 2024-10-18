@@ -1,0 +1,33 @@
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    height: 630px;
+    width: 300px;
+
+    > h3 {
+        color: rgb(31, 36, 40);
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 36px;
+        letter-spacing: 0%;
+        text-align: left;
+        margin: 0;
+        padding: 0;
+        margin-bottom: 7px;
+    }
+
+    > p {
+        color: rgb(31, 36, 40);
+        font-size: 18px;
+        font-weight: 300;
+        line-height: 36px;
+        letter-spacing: 0%;
+        text-align: left;
+        margin: 0;
+        padding: 0;
+        margin-bottom: 1.5rem;
+    }
+}

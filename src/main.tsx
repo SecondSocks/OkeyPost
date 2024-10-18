@@ -6,6 +6,7 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import { HowBuy } from './pages/how-buy'
 import { Sales } from './pages/sales'
 import { Error404 } from './pages/error404'
+import { Prices } from './pages/prices'
 
 const router = createBrowserRouter([
     {
@@ -23,7 +24,7 @@ const router = createBrowserRouter([
     },
     {
         path: '/prices',
-        element: <h1>Prices</h1>,
+        element: <Prices />,
     },
     {
         path: '/help',

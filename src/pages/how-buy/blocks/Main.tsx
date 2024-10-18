@@ -1,7 +1,7 @@
 import styles from './Main.module.scss'
 import { ICard } from '../types'
 import { Card } from '../molecules/Card'
-import { Button } from '../../components/green-button/Button'
+import { GreenButton } from '../../components/green-button/Button'
 
 export function Main() {
     const cardContents: ICard[] = [
@@ -55,7 +55,7 @@ export function Main() {
                     </div>
                 ))}
             </div>
-            <Button text={'Получить адрес в UK'} width={260} height={66} />
+            <GreenButton text={'Получить адрес в UK'} width={260} height={66} />
         </div>
     )
 }

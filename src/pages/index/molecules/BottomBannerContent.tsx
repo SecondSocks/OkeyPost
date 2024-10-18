@@ -1,5 +1,5 @@
 import { useRef } from 'react'
-import { Button } from '../../components/green-button/Button'
+import { GreenButton } from '../../components/green-button/Button'
 import styles from './BottomBannerContent.module.scss'
 
 export function BottomBannerContent() {
@@ -19,7 +19,7 @@ export function BottomBannerContent() {
                 <form>
                     <input ref={inputText} type='text' placeholder='Введите ваш E-Mail'></input>
                 </form>
-                <Button text='Подписаться' width={240} height={66} func={setInputText}/>
+                <GreenButton text='Подписаться' width={240} height={66} func={setInputText}/>
            </div>
         </div>
     )

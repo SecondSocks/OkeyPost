@@ -7,6 +7,6 @@ interface Props {
     func?: () => void
 }
 
-export function Button({text, width, height, func}: Props) {
+export function GreenButton({text, width, height, func}: Props) {
     return <button className={styles.button} style={{width: width, height: height}} onClick={func}>{text}</button>
 }

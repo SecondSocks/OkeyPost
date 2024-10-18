@@ -1,4 +1,4 @@
-import { Button } from '../../components/green-button/Button'
+import { GreenButton } from '../../components/green-button/Button'
 import { ReviewCard } from '../atoms/ReviewCard'
 import styles from './RatingReviews.module.scss'
 
@@ -40,7 +40,7 @@ export function RatingReviews() {
                     city: 'Санкт-Петербург'
                 }}/>
            </div>
-           <Button text={"Все отзывы"} width={240} height={66}/>
+           <GreenButton text={"Все отзывы"} width={240} height={66}/>
         </div>
     )
 }

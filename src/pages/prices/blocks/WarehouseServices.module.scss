@@ -1,0 +1,16 @@
+.container {
+    width: 1400px;
+    margin: 0 auto;
+    margin-top: 160px;
+    display: flex;
+    flex-direction: column;
+
+    > h2 {
+        color: rgb(31, 36, 40);
+        font-size: 44px;
+        font-weight: 800;
+        line-height: 56px;
+        letter-spacing: 0%;
+        text-align: left;
+    }
+}

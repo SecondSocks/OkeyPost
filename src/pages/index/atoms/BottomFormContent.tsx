@@ -32,7 +32,7 @@ export function BottomFormContent() {
                     <option value="Insurance" defaultChecked>Страховка груза</option>
                     <option value="Storage">Хранение груза</option>
                     <option value="ToDoors">Доставка до двери</option>
-                    <option value="UpUnLoading">Погрузочно-разгрзочные работы</option>
+                    <option value="UpUnLoading">Погрузочно-разгрузочные работы</option>
                     <option value="Packing">Упаковка груза</option>
                 </select>
             </form>

@@ -1,0 +1,21 @@
+.container {
+    width: 297px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3px;
+
+    > button {
+        border: 1px solid gray;
+        border-radius: 100%;
+        width: 42px;
+        height: 42px;
+        color: gray;
+        cursor: pointer;
+        padding: auto 0;
+    }
+
+    > p {
+        margin: auto 5px;
+    }
+}
