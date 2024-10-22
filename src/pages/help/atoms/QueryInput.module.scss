@@ -1,0 +1,30 @@
+.container {
+    width: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    > form {
+        width: inherit;
+        border-radius: 16px;
+        box-shadow: 0px 0px 70px 0px rgba(138, 138, 138, 0.1);
+        /* 5 */
+        background: rgb(255, 255, 255);
+
+        legend {
+            color: rgb(34, 34, 34);
+            font-size: 16px;
+            font-weight: 700;
+            line-height: 18px;
+            letter-spacing: 0%;
+            text-align: left;
+        }
+
+        input {
+            width: 100%;
+            height: 70px;
+            border-bottom: 1px solid gray;
+            color: black;
+        }
+    }
+}

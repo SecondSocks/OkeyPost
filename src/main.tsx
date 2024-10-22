@@ -7,6 +7,7 @@ import { HowBuy } from './pages/how-buy'
 import { Sales } from './pages/sales'
 import { Error404 } from './pages/error404'
 import { Prices } from './pages/prices'
+import { Help } from './pages/help'
 
 const router = createBrowserRouter([
     {
@@ -28,7 +29,7 @@ const router = createBrowserRouter([
     },
     {
         path: '/help',
-        element: <h1>Help</h1>,
+        element: <Help />,
     },
     {
         path: '/bonuses',
