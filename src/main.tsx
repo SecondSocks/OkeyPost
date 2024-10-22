@@ -8,6 +8,8 @@ import { Sales } from './pages/sales'
 import { Error404 } from './pages/error404'
 import { Prices } from './pages/prices'
 import { Help } from './pages/help'
+import { Bonuses } from './pages/bonuses'
+import { Blog } from './pages/blog'
 
 const router = createBrowserRouter([
     {
@@ -33,11 +35,11 @@ const router = createBrowserRouter([
     },
     {
         path: '/bonuses',
-        element: <h1>Bonuses</h1>,
+        element: <Bonuses />,
     },
     {
         path: '/blog',
-        element: <h1>Blog</h1>,
+        element: <Blog />,
     },
     {
         path: '/shops',

@@ -1,0 +1,36 @@
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 430px 2rem 200px;
+
+    > div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+
+        > h2 {
+            color: rgb(255, 255, 255);
+            font-size: 44px;
+            font-weight: 800;
+            line-height: 56px;
+            letter-spacing: 0%;
+            text-align: left;
+            margin: 0;
+            padding: 0;
+            width: 685px;
+        }
+
+        > p {
+            color: rgb(255, 255, 255);
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 30px;
+            letter-spacing: 0%;
+            text-align: left;
+            padding: 0;
+            margin: 20px 0 30px;
+        }
+    }
+}

@@ -1,0 +1,14 @@
+.container {
+    width: 1400px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 30px;
+    margin: 90px auto 50px;
+
+    a {
+        outline: 0;
+        border: none;
+        cursor: pointer;
+    }
+}
