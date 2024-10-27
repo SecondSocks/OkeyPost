@@ -63,9 +63,9 @@ export function Header() {
                 <div className={styles.auth}>
                     <div className={styles.login}>
                         <img src="user.png" alt="User" />
-                        <a href="#">
+                        <Link to='/login'>
                             <p>Вход</p>
-                        </a>
+                        </Link>
                     </div>
                     <GreenButton text={"Связаться с нами"} width={170} height={48} />
                 </div>

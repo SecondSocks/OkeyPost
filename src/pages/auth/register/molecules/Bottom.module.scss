@@ -1,0 +1,23 @@
+.container {
+    p {
+        width: 394px;
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 20px;
+        letter-spacing: 0%;
+        text-align: left;
+    }
+
+    a {
+        color: rgb(1, 205, 125);
+    }
+
+    .action {
+        display: flex;
+        justify-content: space-between;
+
+        > p {
+            width: 166px;
+        }
+    }
+}

@@ -1,0 +1,15 @@
+.container {
+    display: flex;
+    width: 180px;
+
+    > a {
+        outline: none;
+        border: none;
+
+        > img {
+                width: 48px;
+                height: 48px;
+                margin: auto 4px;
+            }
+    }
+}

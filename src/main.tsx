@@ -10,6 +10,10 @@ import { Prices } from './pages/prices'
 import { Help } from './pages/help'
 import { Bonuses } from './pages/bonuses'
 import { Blog } from './pages/blog'
+import { Login } from './pages/auth/login'
+import { Indetify } from './pages/auth/identify'
+import { PassRecovery } from './pages/auth/pass-recovery'
+import { Register } from './pages/auth/register'
 
 const router = createBrowserRouter([
     {
@@ -44,6 +48,22 @@ const router = createBrowserRouter([
     {
         path: '/shops',
         element: <h1>Shops</h1>,
+    },
+    {
+        path: '/login',
+        element: <Login />
+    },
+    {
+        path: '/register',
+        element: <Register />
+    },
+    {
+        path: '/identify',
+        element: <Indetify />
+    },
+    {
+        path: '/pass-recovery',
+        element: <PassRecovery />
     }
 ])
 

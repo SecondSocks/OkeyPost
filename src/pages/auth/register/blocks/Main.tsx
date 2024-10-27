@@ -1,11 +1,12 @@
-import { Card } from '../atoms/Card'
-import { Cards } from '../molecules/Cards'
+import { Bottom } from '../molecules/Bottom'
+import { Form } from '../molecules/Form'
 import styles from './Main.module.scss'
 
 export function Main() {
     return (
         <div className={styles.container}>
-            <Cards />
+           <Form />
+           <Bottom />
         </div>
     )
 }

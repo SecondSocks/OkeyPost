@@ -2,7 +2,6 @@ import { BottomBanner } from '../components/bottom-banner/Banner'
 import { Footer } from '../components/footer/Footer'
 import { Header } from '../components/header/header'
 import { TopBanner } from '../components/top-banner/Banner'
-import { Bar } from './blocks/Bar'
 import { Main } from './blocks/Main'
 import styles from './index.module.scss'
 
@@ -16,7 +15,6 @@ export function Blog() {
                 button: false
             }} />
             <Main />
-            <Bar />
             <BottomBanner />
             <Footer />
         </div>

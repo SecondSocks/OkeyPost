@@ -1,0 +1,14 @@
+.container {
+    margin-bottom: 30px;
+
+    > p {
+        margin-bottom: 30px;
+
+        > a {
+            outline: none;
+            border: none;
+            color: rgb(1, 205, 125);
+        }
+    }
+
+}
