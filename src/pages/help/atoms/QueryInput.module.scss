@@ -25,6 +25,12 @@
             height: 70px;
             border-bottom: 1px solid gray;
             color: black;
+            background: transparent;
+            padding-left: 1rem;
+
+            &::placeholder {
+                color: rgba(19, 19, 19, 0.3);
+            }
         }
     }
 }

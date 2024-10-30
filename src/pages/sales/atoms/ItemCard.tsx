@@ -1,4 +1,4 @@
-import { ICard } from '../types'
+import type { ICard } from '../types'
 import styles from './ItemCard.module.scss'
 import parse from 'html-react-parser'
 

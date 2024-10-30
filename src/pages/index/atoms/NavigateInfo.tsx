@@ -1,4 +1,4 @@
-import { INavigateInfo } from '../types'
+import type { INavigateInfo } from '../types'
 import styles from './NavigateInfo.module.scss'
 
 interface Props {

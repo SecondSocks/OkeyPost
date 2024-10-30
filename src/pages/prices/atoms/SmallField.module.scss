@@ -24,5 +24,14 @@
         align-items: center;
         width: 160px;
         border-left: 1px solid gray;
+
+        > h4 {
+            color: rgb(31, 36, 40);
+            font-size: 16px;
+            font-weight: 700;
+            line-height: 16px;
+            letter-spacing: 0%;
+            text-align: left;
+        }
     }
 }

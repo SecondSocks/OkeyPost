@@ -1,4 +1,4 @@
-import { IField } from '../types'
+import type { IField } from '../types'
 import styles from './LargeField.module.scss'
 
 interface Props {
