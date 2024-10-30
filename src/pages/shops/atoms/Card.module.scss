@@ -1,0 +1,30 @@
+.container {
+    display: flex;
+    width: 220px;
+    height: 150px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 50px 40px 30px 30px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 70px 0px rgba(0, 0, 0, 0.05);
+    background: rgb(255, 255, 255);
+
+    > div {
+        width: 210px;
+        height: 85px;
+        > img {
+            max-width: 210px;
+            max-height: 85px;
+        }
+    }
+
+    > h5 {
+        color: rgb(31, 36, 40);
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 32px;
+        letter-spacing: 0%;
+        text-align: left;
+    }
+}

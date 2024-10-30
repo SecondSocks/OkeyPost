@@ -1,20 +1,19 @@
 import { useState } from 'react'
-import styles from './CardsList.module.scss'
-import { Card } from '../atoms/Card'
+import styles from './CardList.module.scss'
+import { ItemCard } from '../atoms/ItemCard'
 
 interface Props {
     posts: {
-        id: number
-        title: string
-        date: string
-        time: string
         imgSrc: string
+        title: string
+        description: string
+        link: string
     }[]
     currentPage: number
     limitPostsOnPage: number
 }
 
-export function CardsList({posts, currentPage, limitPostsOnPage}: Props) {
+export function CardList({posts, currentPage, limitPostsOnPage}: Props) {
     const [currentPageState, setCurrentPageState] = useState(currentPage)
 
     const showPosts = posts.slice((currentPageState - 1) * limitPostsOnPage, (currentPageState - 1) * limitPostsOnPage + limitPostsOnPage)
@@ -32,17 +31,15 @@ export function CardsList({posts, currentPage, limitPostsOnPage}: Props) {
     return (
         <div className={styles.container}>
             <div className={styles.cards}>
-                {showPosts.map((post) =>
-                    <Card data={{
-                        title: post.title,
+                {showPosts.map(post => (
+                    <ItemCard data={{
                         imgSrc: post.imgSrc,
-                        date: post.date,
-                        time: post.time
-                    }} key={post.id}/>
-                )}
+                        title: post.title,
+                        description: post.description,
+                        link: post.link
+                    }} key={post.title} />
+                ))}
             </div>
-
-
             <div className={styles.pagination}>
                 {currentPageState > 1 &&
                     <button onClick={() => previousPage(1)}>←</button>
@@ -59,10 +56,10 @@ export function CardsList({posts, currentPage, limitPostsOnPage}: Props) {
                 {currentPageState + 1 <= totalPages &&
                     <button onClick={() => nextPage(1)}>{currentPageState + 1}</button>
                 }
-                {currentPageState + 2 < totalPages &&
+                {currentPageState + 2 <= totalPages &&
                     <button onClick={() => nextPage(2)}>{currentPageState + 2}</button>
                 }
-                {currentPage < totalPages &&
+                {currentPage < totalPages - 1 &&
                     <button onClick={() => nextPage(1)}>→</button>
                 }
             </div>

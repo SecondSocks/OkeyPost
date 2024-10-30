@@ -1,6 +1,6 @@
-import { ItemCard } from '../atoms/ItemCard'
-import { NavigationBar } from '../atoms/NavigationBar'
+import { useState } from 'react'
 import styles from './MainContent.module.scss'
+import { CardList } from './CardList'
 
 export function MainContent() {
     const cardsContent = [
@@ -66,24 +66,14 @@ export function MainContent() {
         },
     ]
 
+    const [posts, setPosts] = useState(cardsContent)
+
     return (
         <div className={styles.container}>
            <h2>
                 Black Friday Early Access ранний доступ к распродажам в магазинах Великобритании!
            </h2>
-           <div className={styles.shops}>
-                {cardsContent.map(item => (
-                    <ItemCard data={{
-                        imgSrc: item.imgSrc,
-                        title: item.title,
-                        description: item.description,
-                        link: item.link
-                    }} key={item.title}/>
-                ))}
-           </div>
-           <nav>
-                <NavigationBar />
-           </nav>
+           <CardList posts={posts} currentPage={1} limitPostsOnPage={8} />
         </div>
     )
 }

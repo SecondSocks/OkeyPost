@@ -14,6 +14,7 @@ import { Login } from './pages/auth/login'
 import { Indetify } from './pages/auth/identify'
 import { PassRecovery } from './pages/auth/pass-recovery'
 import { Register } from './pages/auth/register'
+import { Shops } from './pages/shops'
 
 const router = createBrowserRouter([
     {
@@ -47,7 +48,7 @@ const router = createBrowserRouter([
     },
     {
         path: '/shops',
-        element: <h1>Shops</h1>,
+        element: <Shops />,
     },
     {
         path: '/login',
