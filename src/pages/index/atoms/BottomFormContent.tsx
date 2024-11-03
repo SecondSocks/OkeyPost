@@ -1,41 +1,47 @@
+import { useForm } from 'react-hook-form'
+import type { IData } from '../types'
 import styles from './BottomFormContent.module.scss'
+import { GreenButton } from '../../components/green-button/Button'
 
 export function BottomFormContent() {
-    return (
-        <div className={styles.container}>
-            <form action='#' method='POST'>
-                <legend>Страна</legend>
-                <select name="country">
-                    <option value="Russia" defaultChecked>Россия</option>
-                    <option value="USA">США</option>
-                    <option value="France">Фрацния</option>
-                    <option value="German">Германия</option>
-                    <option value="Itali">Италия</option>
-                    <option value="Spain">Испания</option>
-                </select>
-            </form>
-            <form action='#' method='POST'>
-                <legend>Город</legend>
-                <input type='text' placeholder='Москва'></input>
-            </form>
-            <form action='#' method='POST'>
-                <legend>Индекс</legend>
-                <input type='text' placeholder='101000'></input>
-            </form>
-            <form action='#' method='POST'>
-                <legend>Вес посылки:</legend>
-                <input type='text' placeholder='0,5'></input>
-            </form>
-            <form action='#' method='POST'>
-                <legend>Дополнительные услуги:</legend>
-                <select name='services'>
-                    <option value="Insurance" defaultChecked>Страховка груза</option>
-                    <option value="Storage">Хранение груза</option>
-                    <option value="ToDoors">Доставка до двери</option>
-                    <option value="UpUnLoading">Погрузочно-разгрузочные работы</option>
-                    <option value="Packing">Упаковка груза</option>
-                </select>
-            </form>
-        </div>
-    )
+	const { register, handleSubmit } = useForm<IData>()
+
+	const onSubmit = (data: IData) => {
+		console.log(data)
+	}
+
+	return (
+		<div className={styles.container}>
+			<form onSubmit={handleSubmit(onSubmit)}>
+                <div>
+                    <select {...register('country')}>
+					<option disabled selected>
+						Не выбарно
+					</option>
+					<option>Россия</option>
+					<option>США</option>
+					<option>Франция</option>
+					<option>Германия</option>
+					<option>Италия</option>
+					<option>Белорусь</option>
+				</select>
+				<input type='text' placeholder='city' {...register('city')} />
+				<input type='text' placeholder='index' {...register('index')} />
+				<input type='text' placeholder='weight' {...register('weight')} />
+				<select {...register('services')}>
+					<option disabled selected>
+						Не выбарно
+					</option>
+					<option>Страховка груза</option>
+					<option>Хранение груза</option>
+					<option>Доставка до двери</option>
+					<option>Погрузочно-разгрузочные работы</option>
+					<option>Упаковка груза</option>
+				</select>
+                </div>
+				
+				<GreenButton text='Рассчитать' width={240} height={66} type={'submit'} />
+			</form>
+		</div>
+	)
 }

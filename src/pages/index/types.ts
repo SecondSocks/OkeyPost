@@ -1,3 +1,11 @@
+export interface IData {
+    country: string
+    city: string
+    index: number
+    weight: string
+    services: string
+}
+
 export interface IProductSide {
     title: string
     src: string

@@ -5,8 +5,18 @@ interface Props {
     width: number
     height: number
     func?: () => void
+    type?: string
 }
 
-export function GreenButton({text, width, height, func}: Props) {
-    return <button className={styles.button} style={{width: width, height: height}} onClick={func}>{text}</button>
+export function GreenButton({text, width, height, func, type}: Props) {
+    return (
+			<button
+				className={styles.button}
+				style={{ width: width, height: height }}
+				onClick={func}
+				type={type}
+            >
+				{text}
+			</button>
+		)
 }
