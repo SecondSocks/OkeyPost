@@ -6,6 +6,10 @@ export interface IData {
     services: string
 }
 
+export interface IBannerForm {
+    email: string
+}
+
 export interface IProductSide {
     title: string
     src: string

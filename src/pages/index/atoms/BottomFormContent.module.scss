@@ -13,15 +13,19 @@
             display: flex;
             justify-content: space-between;
             margin-bottom: 30px;
-        }
 
-        legend {
-            color: rgb(34, 34, 34);
-            font-size: 16px;
-            font-weight: 500;
-            line-height: 18px;
-            letter-spacing: 0%;
-            text-align: left;
+            > fieldset {
+                outline: none;
+                border: none;
+
+                > p {
+                    padding: 0;
+                    margin: 0;
+                    margin-top: 5px;
+                    color: rgb(255, 31, 31);
+                    font-size: 12px;
+                }
+            }
         }
 
         input[type=text] {
@@ -34,6 +38,10 @@
             &::placeholder {
                 color: rgba(19, 19, 19, 0.3);
             }
+        }
+
+        legend {
+            color:rgb(34, 34, 34);
         }
 
         select {

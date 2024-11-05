@@ -1,54 +1,44 @@
 .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 65px 200px;
-    gap: 115px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 65px 200px;
+	gap: 115px;
 
-    > h3 {
-        color: rgb(255, 255, 255);
-        font-size: 30px;
-        font-weight: 700;
-        line-height: 40px;
-        letter-spacing: 0%;
-        text-align: left;
-        width: 482px;
-        height: 120px;
-    }
+	> h3 {
+		color: rgb(255, 255, 255);
+		font-size: 30px;
+		font-weight: 700;
+		line-height: 40px;
+		letter-spacing: 0%;
+		text-align: left;
+		width: 482px;
+		height: 120px;
+	}
 
-    .form {
-        display: flex;
+	form {
+		display: flex;
         justify-content: space-between;
+        align-items: center;
         width: 800px;
+        height: 50px;
 
-        > form {
+        > fieldset {
             width: 510px;
-            height: 50px;
+            height: inherit;
             border: none;
-            border-bottom: 1px solid white;
 
-            input {
-                box-sizing: border-box;
+            > input {
                 width: inherit;
-                height: 40px;
+                height: inherit;
                 background: none;
-                background-clip: padding-box;
-
-                &::placeholder {
-                    color: rgb(255, 255, 255);
-                    font-size: 16px;
-                    font-weight: 300;
-                    line-height: 16px;
-                    letter-spacing: 0%;
-                    text-align: left;
-                }
-
-                &:focus {
-                    outline: 0;
-                }
+                border-bottom: 1px solid white;
+                outline: none;
             }
 
-
+            > p {
+                color: rgb(194, 0, 0);
+            }
         }
-    }
+	}
 }
