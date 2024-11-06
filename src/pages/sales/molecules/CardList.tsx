@@ -21,11 +21,11 @@ export function CardList({posts, currentPage, limitPostsOnPage}: Props) {
     const totalPages = Math.ceil(posts.length / limitPostsOnPage)
 
     const previousPage = (i: number): void => {
-        setCurrentPageState((a) => a - i)
+        setCurrentPageState(a => a-i)
     }
 
     const nextPage = (i: number): void => {
-        setCurrentPageState((a) => a + i)
+        setCurrentPageState(a => a+i)
     }
 
     return (
@@ -59,7 +59,7 @@ export function CardList({posts, currentPage, limitPostsOnPage}: Props) {
                 {currentPageState + 2 <= totalPages &&
                     <button onClick={() => nextPage(2)}>{currentPageState + 2}</button>
                 }
-                {currentPage < totalPages - 1 &&
+                {currentPageState < totalPages &&
                     <button onClick={() => nextPage(1)}>→</button>
                 }
             </div>

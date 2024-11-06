@@ -10,3 +10,7 @@ export interface IField {
     price: string
     description?: string
 }
+
+export interface IUrl {
+    url: string
+}

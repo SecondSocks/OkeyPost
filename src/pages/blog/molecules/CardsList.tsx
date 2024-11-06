@@ -62,7 +62,7 @@ export function CardsList({posts, currentPage, limitPostsOnPage}: Props) {
                 {currentPageState + 2 < totalPages &&
                     <button onClick={() => nextPage(2)}>{currentPageState + 2}</button>
                 }
-                {currentPage < totalPages &&
+                {currentPageState < totalPages &&
                     <button onClick={() => nextPage(1)}>→</button>
                 }
             </div>

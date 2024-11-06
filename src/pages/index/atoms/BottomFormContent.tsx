@@ -4,19 +4,19 @@ import type { IData } from '../types'
 import styles from './BottomFormContent.module.scss'
 
 export function BottomFormContent() {
-	const { register, handleSubmit, reset, formState } = useForm<IData>()
+	const { register, handleSubmit, reset, formState: {errors, isSubmitted} } = useForm<IData>()
 
 	const onSubmit: SubmitHandler<IData> = data => {
 		console.log(data)
-	}
+    }
 
 	const resetForm = () => setTimeout(() => reset(), 10)
 
-	const countryError = formState.errors['country']?.message
-	const cityError = formState.errors['city']?.message
-	const indexError = formState.errors['index']?.message
-	const weightError = formState.errors['weight']?.message
-	const serviceError = formState.errors['services']?.message
+	const countryError = errors['country']?.message
+	const cityError = errors['city']?.message
+	const indexError = errors['index']?.message
+	const weightError = errors['weight']?.message
+	const serviceError = errors['services']?.message
 
 	return (
 		<div className={styles.container}>
@@ -112,7 +112,9 @@ export function BottomFormContent() {
 					width={240}
 					height={66}
 					type={'submit'}
-					func={resetForm}
+					func={() => {
+                        if (isSubmitted) resetForm()
+                    }}
 				/>
 			</form>
 		</div>

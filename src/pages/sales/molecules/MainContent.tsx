@@ -73,7 +73,7 @@ export function MainContent() {
            <h2>
                 Black Friday Early Access ранний доступ к распродажам в магазинах Великобритании!
            </h2>
-           <CardList posts={posts} currentPage={1} limitPostsOnPage={8} />
+           <CardList posts={posts} currentPage={1} limitPostsOnPage={6} />
         </div>
     )
 }
