@@ -13,7 +13,6 @@ export function Main() {
         <div className={styles.container}>
             <h3>Введите код из СМС для водтверждения</h3>
             <Form />
-            <GreenButton text={'Войти'} width={200} height={60} func={checkSMS}/>
         </div>
     )
 }

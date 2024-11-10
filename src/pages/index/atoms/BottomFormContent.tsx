@@ -28,9 +28,9 @@ export function BottomFormContent() {
 							id='country'
 							{...register('country', {
 								required: 'Это поле обязательно',
-							})}
+							})} defaultValue={'Выберите страну'}
 						>
-							<option disabled selected>
+							<option disabled>
 								Выберите страну
 							</option>
 							<option>Россия</option>
@@ -92,9 +92,9 @@ export function BottomFormContent() {
 						<select
 							{...register('services', {
 								required: 'Это поле обязательно',
-							})}
+							})} defaultValue={'Выберите услугу'}
 						>
-							<option disabled selected>
+							<option disabled>
 								Выберите услугу
 							</option>
 							<option>Страховка груза</option>

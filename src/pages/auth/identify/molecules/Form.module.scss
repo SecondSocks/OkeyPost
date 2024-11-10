@@ -1,3 +1,46 @@
 .container {
-    margin-bottom: 20px;
+    > form {
+        > fieldset {
+            border: none;
+            margin: 0;
+            padding: 0;
+
+            > legend {
+                color: rgb(31, 36, 40);
+                font-size: 16px;
+                font-weight: 700;
+                line-height: 36px;
+                letter-spacing: 0%;
+                text-align: left;
+            }
+
+            > input {
+                box-sizing: border-box;
+                border: 1px solid rgb(192, 201, 215);
+                border-radius: 6px;
+                background: rgb(252, 253, 255);
+                width: 400px;
+                height: 60px;
+                color: black;
+                padding-left: 1rem;
+                font-size: 20px;
+            }
+
+            > p {
+                margin: 0;
+                padding: 0;
+                font-size: 14px;
+                color: rgb(251, 39, 17);
+                margin-top: 0.3rem;
+            }
+        }
+
+        > p {
+            color: rgb(31, 36, 40);
+
+            > a {
+                color: rgb(1, 205, 125);
+            }
+        }
+    }
 }
